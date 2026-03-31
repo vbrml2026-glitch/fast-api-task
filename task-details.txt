@@ -1,0 +1,77 @@
+Hi Vasu,
+
+Please find below exercise that you need to execute while doing a learning for the FastAPI.
+
+We would like you to review below requirement and implement the given practical demo. Please follow all the necessary functional and non-functional requirement outlined in the instructions section. Your practical will be evaluated based on the instruction shared here.
+
+     API Development Summary:
+        Users:
+
+            Create Register User API
+
+            Login API
+
+            Get Users API
+
+                If authorized then all information of all users
+
+                If not, then only limited information of all users
+                If specific id or ids are given, then only information of those users
+                Optional paging
+                Optional sorting
+        Posts:
+
+            Create/Update Post API (Common endpoint, if post exist then update else create) (protected route)
+
+                Please consider uploading an image as part of the API
+
+            Get Post by User API (protected route) (should include total likes, dis-likes, recently liked & disliked top 5 users with their basic information)
+
+                Optional filter for likes, dislikes, title, content, created_at, updated_at
+
+                Optional paging
+                Optional sorting
+            API to like/dislike post (protected route)
+
+            API to get top 10/50 liked/disliked posts (protected route)
+
+            API to like/dislike post (protected route)API to get top 10/50 liked/disliked posts (protected route)
+
+                Optional filter to get it for specific user
+
+    Instructions:
+        Use FastAPI and PostgreSQL Database
+
+        Please create SQL database for given requirement.
+
+        Please create required APIs as outlined above.
+
+        Please follow below instructions carefully while developing those APIs.
+            Authorized APIs
+
+                Authentication done using JWT.
+                Use RSA algorithm to sign the JWT. (OPTIONAL)
+            Proper data validation for incoming data from client
+
+            Follow standard practices for REST APIs. (Eg: use HTTP verbs, use JSON, use HTTP status codes, proper naming conventions of end points)
+
+            Follow standard practices for coding
+
+                Consistent naming conventions
+
+                Self-documenting code (use comments)
+                Put README for dev environment setup and general info
+                Don't hard code any values. Use environment variables.
+                Try to follow best patterns like DRY, KISS, SOLID principles etc.
+            Create API spec using OpenAPI V3 standards
+
+            Unit Test Case Development
+
+        Submission of Code:
+            API Code
+
+            Database Script with data for verification
+
+            Please include proper Read.ME file with necessary instructions and code guideline.
+
+            Please do proper code commenting 
