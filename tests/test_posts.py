@@ -95,8 +95,9 @@ IF hash exists:
 
 // STEP 2: PERSON CHECK
 ELSE IF email OR phone exists:
-   → SAME PERSON
-   → CREATE NEW APPLICATION
+   → SAME PERSON (re-apply before postion closed (i.e if validity of open position is 30 days and apply again)) → IGNORE
+    ELSE:
+        → CREATE NEW APPLICATION
 
 // STEP 3: NEW PERSON
 ELSE:
