@@ -87,19 +87,3 @@ def test_upsert_vote_and_aggregation_top_voters(client, make_user_credentials, v
     assert len(top["posts"]) == 1
     assert top["posts"][0]["likes_count"] == (6 if vote_type == "like" else 0)
     assert top["posts"][0]["dislikes_count"] == (6 if vote_type == "dislike" else 0)
-
-
-// STEP 1: FILE DUPLICATE CHECK
-IF hash exists:
-   → IGNORE (same file, no need to process)
-
-// STEP 2: PERSON CHECK
-ELSE IF email OR phone exists:
-   → SAME PERSON (re-apply before postion closed (i.e if validity of open position is 30 days and apply again)) → IGNORE
-    ELSE:
-        → CREATE NEW APPLICATION
-
-// STEP 3: NEW PERSON
-ELSE:
-   → NEW CANDIDATE
-
