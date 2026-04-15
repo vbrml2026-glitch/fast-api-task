@@ -4,7 +4,7 @@ import time
 
 import pytest
 
-
+# Tests of register & login with their respective credentials
 def register_and_login(client, creds: dict) -> str:
     r = client.post("/auth/register", json=creds)
     assert r.status_code == 201
